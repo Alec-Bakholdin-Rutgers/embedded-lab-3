@@ -1,0 +1,231 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct  6 22:10:31 2021
+# Process ID: 143007
+# Current directory: /home/user/adventures_with_ip/adventures_with_ip.runs/impl_1
+# Command line: vivado -log ip_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ip_design_wrapper.tcl -notrace
+# Log file: /home/user/adventures_with_ip/adventures_with_ip.runs/impl_1/ip_design_wrapper.vdi
+# Journal file: /home/user/adventures_with_ip/adventures_with_ip.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source ip_design_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/user/Lab3/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2021.1/data/ip'.
+Command: link_design -top ip_design_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_0_0/ip_design_axi_gpio_0_0.dcp' for cell 'ip_design_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_1_0/ip_design_axi_gpio_1_0.dcp' for cell 'ip_design_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_led_controller_0_1/ip_design_led_controller_0_1.dcp' for cell 'ip_design_i/led_controller_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_lms_pcore_0_0/ip_design_lms_pcore_0_0.dcp' for cell 'ip_design_i/lms_pcore_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_nco_0_0/ip_design_nco_0_0.dcp' for cell 'ip_design_i/nco_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_processing_system7_0_0/ip_design_processing_system7_0_0.dcp' for cell 'ip_design_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_rst_ps7_0_100M_0/ip_design_rst_ps7_0_100M_0.dcp' for cell 'ip_design_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_zybo_audio_ctrl_0_0/ip_design_zybo_audio_ctrl_0_0.dcp' for cell 'ip_design_i/zybo_audio_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_xbar_0/ip_design_xbar_0.dcp' for cell 'ip_design_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_auto_pc_0/ip_design_auto_pc_0.dcp' for cell 'ip_design_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2520.074 ; gain = 0.000 ; free physical = 4840 ; free virtual = 21898
+INFO: [Netlist 29-17] Analyzing 196 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_processing_system7_0_0/ip_design_processing_system7_0_0.xdc] for cell 'ip_design_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_processing_system7_0_0/ip_design_processing_system7_0_0.xdc] for cell 'ip_design_i/processing_system7_0/inst'
+Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_rst_ps7_0_100M_0/ip_design_rst_ps7_0_100M_0_board.xdc] for cell 'ip_design_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_rst_ps7_0_100M_0/ip_design_rst_ps7_0_100M_0_board.xdc] for cell 'ip_design_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_rst_ps7_0_100M_0/ip_design_rst_ps7_0_100M_0.xdc] for cell 'ip_design_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_rst_ps7_0_100M_0/ip_design_rst_ps7_0_100M_0.xdc] for cell 'ip_design_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_0_0/ip_design_axi_gpio_0_0_board.xdc] for cell 'ip_design_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_0_0/ip_design_axi_gpio_0_0_board.xdc] for cell 'ip_design_i/axi_gpio_0/U0'
+Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_0_0/ip_design_axi_gpio_0_0.xdc] for cell 'ip_design_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_0_0/ip_design_axi_gpio_0_0.xdc] for cell 'ip_design_i/axi_gpio_0/U0'
+Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_1_0/ip_design_axi_gpio_1_0_board.xdc] for cell 'ip_design_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_1_0/ip_design_axi_gpio_1_0_board.xdc] for cell 'ip_design_i/axi_gpio_1/U0'
+Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_1_0/ip_design_axi_gpio_1_0.xdc] for cell 'ip_design_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/user/adventures_with_ip/adventures_with_ip.gen/sources_1/bd/ip_design/ip/ip_design_axi_gpio_1_0/ip_design_axi_gpio_1_0.xdc] for cell 'ip_design_i/axi_gpio_1/U0'
+Parsing XDC File [/home/user/Lab3/ip_repo/adventures_with_ip.xdc]
+WARNING: [Vivado 12-584] No ports matched 'leds_out[0]'. [/home/user/Lab3/ip_repo/adventures_with_ip.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/user/Lab3/ip_repo/adventures_with_ip.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RECDAT'. [/home/user/Lab3/ip_repo/adventures_with_ip.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/user/Lab3/ip_repo/adventures_with_ip.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RECDAT'. [/home/user/Lab3/ip_repo/adventures_with_ip.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/user/Lab3/ip_repo/adventures_with_ip.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'IIC_0_scl_io'. [/home/user/Lab3/ip_repo/adventures_with_ip.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/user/Lab3/ip_repo/adventures_with_ip.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/user/Lab3/ip_repo/adventures_with_ip.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2736.051 ; gain = 0.000 ; free physical = 4741 ; free virtual = 21789
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+
+20 Infos, 4 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2736.051 ; gain = 216.105 ; free physical = 4741 ; free virtual = 21789
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.46 . Memory (MB): peak = 2736.051 ; gain = 0.000 ; free physical = 4728 ; free virtual = 21776
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 139a3d595
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2736.051 ; gain = 0.000 ; free physical = 4353 ; free virtual = 21401
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 4 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 10c95991f
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2858.754 ; gain = 0.000 ; free physical = 4192 ; free virtual = 21239
+INFO: [Opt 31-389] Phase Retarget created 32 cells and removed 67 cells
+INFO: [Opt 31-1021] In phase Retarget, 10 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1217a6240
+
+Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2858.754 ; gain = 0.000 ; free physical = 4191 ; free virtual = 21239
+INFO: [Opt 31-389] Phase Constant propagation created 4 cells and removed 10 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: ec9db819
+
+Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:00.49 . Memory (MB): peak = 2858.754 ; gain = 0.000 ; free physical = 4181 ; free virtual = 21239
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 36 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: ec9db819
+
+Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:00.54 . Memory (MB): peak = 2858.754 ; gain = 0.000 ; free physical = 4181 ; free virtual = 21239
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: ec9db819
+
+Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2858.754 ; gain = 0.000 ; free physical = 4181 ; free virtual = 21239
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 178846453
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.57 . Memory (MB): peak = 2858.754 ; gain = 0.000 ; free physical = 4181 ; free virtual = 21239
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              32  |              67  |                                             10  |
+|  Constant propagation         |               4  |              10  |                                              0  |
+|  Sweep                        |               4  |              36  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2858.754 ; gain = 0.000 ; free physical = 4181 ; free virtual = 21239
+Ending Logic Optimization Task | Checksum: 149c63c58
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2858.754 ; gain = 0.000 ; free physical = 4181 ; free virtual = 21239
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 11aa938ce
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3155.676 ; gain = 0.000 ; free physical = 4169 ; free virtual = 21227
+Ending Power Optimization Task | Checksum: 11aa938ce
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.74 . Memory (MB): peak = 3155.676 ; gain = 296.922 ; free physical = 4175 ; free virtual = 21233
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 12f96e55a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.33 . Memory (MB): peak = 3155.676 ; gain = 0.000 ; free physical = 4175 ; free virtual = 21233
+Ending Final Cleanup Task | Checksum: 12f96e55a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3155.676 ; gain = 0.000 ; free physical = 4175 ; free virtual = 21233
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3155.676 ; gain = 0.000 ; free physical = 4175 ; free virtual = 21233
+Ending Netlist Obfuscation Task | Checksum: 12f96e55a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3155.676 ; gain = 0.000 ; free physical = 4175 ; free virtual = 21233
+INFO: [Common 17-83] Releasing license: Implementation
+44 Infos, 4 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3155.676 ; gain = 419.625 ; free physical = 4175 ; free virtual = 21233
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3155.676 ; gain = 0.000 ; free physical = 4167 ; free virtual = 21225
+INFO: [Common 17-1381] The checkpoint '/home/user/adventures_with_ip/adventures_with_ip.runs/impl_1/ip_design_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ip_design_wrapper_drc_opted.rpt -pb ip_design_wrapper_drc_opted.pb -rpx ip_design_wrapper_drc_opted.rpx
+Command: report_drc -file ip_design_wrapper_drc_opted.rpt -pb ip_design_wrapper_drc_opted.pb -rpx ip_design_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/user/adventures_with_ip/adventures_with_ip.runs/impl_1/ip_design_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC BIVC-1] Bank IO standard Vcc: Conflicting Vcc voltages in bank 34. For example, the following two ports in this bank have conflicting VCCOs:  
+IIC_0_0_scl_io (LVCMOS18, requiring VCCO=1.800) and FCLK_CLK1_0 (LVCMOS33, requiring VCCO=3.300)
+ERROR: [DRC BIVC-1] Bank IO standard Vcc: Conflicting Vcc voltages in bank 35. For example, the following two ports in this bank have conflicting VCCOs:  
+LEDs_out[0] (LVCMOS18, requiring VCCO=1.800) and sws_4bits_tri_i[0] (LVCMOS33, requiring VCCO=3.300)
+INFO: [Vivado_Tcl 4-198] DRC finished with 2 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 4 Warnings, 4 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  6 22:10:59 2021...
